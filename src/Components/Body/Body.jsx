@@ -51,7 +51,7 @@ const Body = ({reload}) => {
 
 
 <div className={`${!togle?'hidden':'flex'} w-full justify-between`}>
-    <input name='task' onChange={handleChange}  type="text" className='w-[70%] h-[40px] outline-none' placeholder='type....'required/>
+    <input name='task' onChange={handleChange}  type="text" className='w-[70%] h-[40px] outline-none' placeholder='Update here...'required/>
     <div>
     <input name='date' onChange={handleChange}   className='mx-4' type="date" required/>
     <button onClick={()=>submit()} className='bg-blue-500 text-white py-2 rounded-xl px-3'>Submit</button>
@@ -62,11 +62,16 @@ const Body = ({reload}) => {
     <div className='flex justify-end my-3'>
     <span className='me-2'>Filter</span>
     <select name="" id="">
-        <option>kdjhvd</option>
+        <option>All</option>
+        <option>Completed</option>
+        <option>Active</option>
+        <option>Has due date</option>
+
+
     </select>
     <span className='me-2 ms-5'>Sort</span>
     <select name="" id="">
-        <option>kdjhvd</option>
+        <option>All</option>
     </select>
     </div>
     <div>

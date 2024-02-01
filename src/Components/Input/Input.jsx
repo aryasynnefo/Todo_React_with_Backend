@@ -30,10 +30,10 @@ const Input = () => {
     <svg className="w-10 rounded-md h-10 me-2 text-white bg-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
     <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m5 12 4.7 4.5 9.3-9"/>
   </svg>
-        <h1 >My Todos</h1>Filter
+        <h1 >My Todo-s</h1>
     </div>
     <div className="w-[90%] px-5 mx-auto border-[2px] py-5 my-5 flex justify-between items-center text-blue-500 ">
-    <input name='task' onChange={handleChange} type="text" className='w-[70%] h-[40px] outline-none' placeholder='type....'/>
+    <input name='task' onChange={handleChange} type="text" className='w-[70%] h-[40px] outline-none' placeholder='Add task name'/>
     <div>
     <input name='date' onChange={handleChange} className='mx-4' type="date"/>
     <button onClick={submit} className='bg-blue-500 text-white py-2 rounded-xl px-3'>Add</button>

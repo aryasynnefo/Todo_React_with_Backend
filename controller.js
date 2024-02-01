@@ -36,6 +36,6 @@ export async function editTask(req,res)
         const data=await schema.updateOne({_id:id},{$set :{task,date,status}})
         res.status(200).send('updated')
     } catch (error) {
-        res.status(404).send(error)
+        res.status(404).send(error) 
     }
 }
